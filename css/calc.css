@@ -1,0 +1,305 @@
+:root {
+    --dark-one   : #333;
+    --dark-two   : #7a7a7a;
+    --main-color : #1d1d1d;
+    --light-one  : #FFFFFF;
+    --light-two  : #f9fafb;
+    --light-three: #f6f7fb;
+  }
+  *::-webkit-scrollbar {
+    width: .2rem;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #FFC700;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+  }
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background-color: #1d1d1d;
+    }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .container {
+    position : relative;
+    z-index  : 5;
+    height   : auto;
+    max-width: 100%;
+    padding  : 0 2rem;
+    margin   : 0 2rem;
+    color    : var(--main-color);
+    opacity: 87%;
+  }
+  
+  .stop-scrolling {
+    height  : 100%;
+    overflow: hidden;
+  }
+  
+    header {
+    width           : 100%;
+    background-color: #1d1d1d;
+    overflow        : hidden;
+    position        : relative;
+  }
+
+  nav {
+    width   : 100%;
+    position: relative;
+    z-index : 50;
+  }
+  
+  nav .container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    height         : 8rem;
+  }
+  
+  nav .logo {
+    width      : 100px;
+    display    : flex;
+    align-items: center;
+    margin-top : 2rem;
+  
+  }
+
+  .sun { 
+      position: absolute;
+      top:-30rem;
+      left: 0rem;
+      right:-60rem;
+      bottom:0;
+      margin: auto;  
+      width:10rem;
+      height:10rem;
+      border-radius:50%;	
+      background:white;
+      opacity:0.9;			
+      box-shadow: 0px 0px 200px 65px white; 
+      animation: ray_anim 120s linear infinite;
+  }
+  
+  .ml3 {
+    font-size     : 4rem;
+    line-height   : 0.8;
+    color         : #FFC700;
+    letter-spacing: .1rem;
+    font-family   : 'Eagle', sans-serif;
+  }
+
+  #myImgCham2 {
+    width        : auto;
+    height       : 70%;
+    cursor       : pointer;
+    display      : block;
+    margin-left  : auto;
+    margin-right : auto;
+    box-shadow   :
+      #FFC700 10px -10px,
+      rgb(255, 255, 255) 20px -20px 0px -3px, #F54800 20px -20px 20px;
+  
+  }
+  
+  .gridCal {
+    display              : grid;
+    grid-template-rows   : auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap           : 5rem;
+    row-gap              : 15rem;
+    height               : auto;
+    margin               : 20rem 0;
+  }
+  
+  #sitem1 {
+    grid-row-start   : 1;
+    grid-column-start: 1;
+    grid-row-end     : 2;
+    grid-column-end  : 2;
+    align-self       : center;
+    justify-self     : center;
+  }
+  
+  #sitem2 {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+  
+  #sitem3 {
+    grid-area   : 2 / 3 / 4 / 4;
+    align-self  : center;
+    justify-self: center;
+  }
+  
+  #sitem4 {
+    grid-area: 2 / 1 / 4 / 3;
+  }
+  
+  #sitem5 {
+    grid-area   : 6 / 1 / 4 / 2;
+    align-self  : center;
+    justify-self: center;
+  }
+  
+  #sitem6 {
+    grid-area: 6 / 2 / 4 / 4;
+  }
+  
+  #sitem7 {
+    grid-area   : 6 / 3 / 8 / 4;
+    align-self  : center;
+    justify-self: center;
+  }
+  
+  #sitem8 {
+    grid-area: 6 / 1 / 8 / 3;
+  }
+  
+  #sitem9 {
+    grid-area   : 8 / 1 / 10 / 2;
+    align-self  : center;
+    justify-self: center;
+  }
+  
+  #sitem10 {
+    grid-area: 8 / 2 / 10 / 4;
+  }
+
+  #button {
+    background-color: #151515;
+    width: 50px;
+    height: 50px;
+    padding: .7rem;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  
+  #button:hover {
+    cursor: pointer;
+    background-color: #181818;
+    color: #1d1d1d;
+  }
+  #button:active {
+    background-color: #FF4800;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+  /** responsive**/
+  @media (max-width: 650px) {
+
+    .sun { 
+        position: absolute;
+        top:0rem;
+        left: 20rem;
+        right:0rem;
+        bottom:25rem;
+        width:10rem;
+        height:10rem;			
+        box-shadow: 0px 0px 200px 65px white;  
+    }
+
+    .container {
+        margin-bottom: 5rem;
+    }
+
+    .gridCal {
+      position: relative;
+      grid-template-columns: 200%;
+      margin: 0%;
+      margin-top           : 10rem;
+      }
+
+    .ml3 {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #myImgCham2 {
+      width        : 50%;
+      height       : 100%;
+      cursor       : pointer;
+      transition   : 0.3s;
+      display      : block;
+      margin: 0%;
+      box-shadow   :
+        #FFC700 10px -10px,
+        rgb(255, 255, 255) 20px -20px 0px -3px, #F54800 20px -20px 20px;
+      }
+    
+      #sitem1 {
+        grid-area: 1 /1 /2 /1;
+      }
+    
+      #sitem2 {
+        grid-area: 2 /1 /3 /1;
+      }
+    
+      #sitem3 {
+        grid-area: 3 /1 /4 /1;
+      }
+    
+      #sitem4 {
+        grid-area: 4 /1 /5 /1;
+      }
+    
+      #sitem5 {
+        grid-area: 5 /1 /6/1;
+      }
+    
+      #sitem6 {
+        grid-area: 6 /1 /7 /1;
+      }
+    
+      #sitem7 {
+        grid-area: 7 /1 /8 /1;
+      }
+    
+      #sitem8 {
+        grid-area: 8 /1 /9 /1;
+      }
+    
+      #sitem9 {
+        grid-area: 9 /1 /10 /1;
+      }
+    
+      #sitem10 {
+        grid-area: 10 /1 /11/1;
+      }
+  }
+ 
