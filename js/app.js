@@ -40,7 +40,17 @@ const svgText = anime({
 });
 
 
-/// New Submit Button
+/// Smooth scroll effect
+const scroll = new Scrooth({
+  element: window,
+  strength: 20,
+  acceleration: 4.5,
+  deceleration: 0.975,
+});
+
+
+// Projects images Animation GSAP
+
 
 
 // Project Outputs Desc

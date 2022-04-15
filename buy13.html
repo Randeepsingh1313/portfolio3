@@ -59,6 +59,15 @@
           </main>
            <!-- Jquery for Scroll Top-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./js/app.js"></script>
+        <!-- Smooth scrolling -->
+        <script src="./js/scrooth.js"></script>  
+        <script>
+          const scroll = new Scrooth({
+                            element: window,
+                            strength: 20,
+                            acceleration: 4.5,
+                            deceleration: 0.975,
+                          });
+        </script> 
       </body>  
 </html>
