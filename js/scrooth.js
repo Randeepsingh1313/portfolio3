@@ -29,7 +29,7 @@ class Scrooth {
     scroll() {
       if (this.running) {
         this.currentDistance *= this.isDistanceAsc === true ? this.acceleration : this.deceleration;
-        Math.abs(this.currentDistance) < 0.1 && this.isDistanceAsc === false ? this.running = false : 1;
+        Math.abs(this.currentDistance) < 0.2 && this.isDistanceAsc === false ? this.running = false : 1;
         Math.abs(this.currentDistance) >= Math.abs(this.distance) ? this.isDistanceAsc = false : 1;
   
         this.top += this.currentDistance;
