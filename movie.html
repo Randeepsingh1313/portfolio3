@@ -66,6 +66,8 @@
               </svg>
             </a> 
         </main>
+          <!-- Scroll Reveal-->
+          <script src="https://unpkg.com/scrollreveal"></script>
         <!-- Jquery for Scroll Top-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Smooth scrolling -->
@@ -77,6 +79,9 @@
                             acceleration: 4.5,
                             deceleration: 0.975,
                           });
+                          ScrollReveal().reveal('.container');
+                          ScrollReveal().reveal('.ml3', { delay: 1300 });
+                          ScrollReveal().reveal('#myImgCham2', { delay: 500 });
         </script> 
   </body>
 </html>
