@@ -22,8 +22,18 @@ $(window).scroll(function() {
 
 btn.on('click', function(e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+  $('html, body').animate({scrollTop:0, behavior: 'smooth' }, '300');
 });
+
+// function scrollToTop() {
+//   var position =
+//       document.body.scrollTop || document.documentElement.scrollTop;
+//   if (position) {
+//       window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+//       scrollAnimation = setTimeout("scrollToTop()", 30);
+//   } else clearTimeout(scrollAnimation);
+// }
+
 
 
 // Text ANimation
@@ -40,13 +50,27 @@ const svgText = anime({
 });
 
 
-/// Smooth scroll effect
+// /// Smooth scroll effect
 const scroll = new Scrooth({
   element: window,
   strength: 20,
-  acceleration: 4.5,
-  deceleration: 0.975,
+  acceleration: 20,
+  deceleration: 0.900,
 });
+
+//  SmoothReveal
+ScrollReveal().reveal('nav', { delay: 2000 });
+          ScrollReveal().reveal('.title', { delay: 500 });
+          ScrollReveal().reveal('.exploration-text', { delay: 1000 });
+          ScrollReveal().reveal('.exploration-grid', { delay: 1600 });
+          ScrollReveal().reveal('.home-casestudies', { delay: 1600 });
+          ScrollReveal().reveal('.footer-input', { delay: 1600 });
+          ScrollReveal().reveal('.contact-form .text-area', { delay: 1600 });
+          ScrollReveal().reveal('iframe', { delay: 2000 });
+          ScrollReveal().reveal('.about-sec', { delay: 2000 });
+          ScrollReveal().reveal('#my-form-button', { delay: 2000 });
+          
+          
 
 
 // Projects images Animation GSAP
