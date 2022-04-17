@@ -54,7 +54,7 @@ const svgText = anime({
 const scroll = new Scrooth({
   element: window,
   strength: 20,
-  acceleration: 20,
+  acceleration: 25,
   deceleration: 0.900,
 });
 
