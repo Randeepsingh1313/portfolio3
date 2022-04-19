@@ -801,6 +801,7 @@ img {
 
 .home-casestudies a:hover .project-desc p {
   color: #000000;
+  font-weight: 900;
 }
 
 .home-casestudies p {
@@ -1050,9 +1051,7 @@ img {
 }
 
 .about-sec .about-services .content-services {
-  background-color: #101010;
   box-sizing: border-box;
-  padding: 100px 140px;
   width: 100%;
 }
 

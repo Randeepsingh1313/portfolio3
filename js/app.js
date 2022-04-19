@@ -1,14 +1,9 @@
-const filter_btns = document.querySelectorAll(".filter-btn");
-const skills_wrap = document.querySelector(".skills");
-const skills_bars = document.querySelectorAll(".skill-progress");
-const records_wrap = document.querySelector(".records");
-const records_numbers = document.querySelectorAll(".number");
+
 const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
 
- 
 // Scroll to up Button
 var btn = $('#button');
 
@@ -24,17 +19,6 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0, behavior: 'smooth' }, '300');
 });
-
-// function scrollToTop() {
-//   var position =
-//       document.body.scrollTop || document.documentElement.scrollTop;
-//   if (position) {
-//       window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-//       scrollAnimation = setTimeout("scrollToTop()", 30);
-//   } else clearTimeout(scrollAnimation);
-// }
-
-
 
 // Text ANimation
 const svgPath = document.querySelectorAll('.path');
@@ -94,19 +78,6 @@ ScrollReveal().reveal('nav', { delay: 2000 });
 //     return i*50
 //   }
 // })
-
-// Vivus Library
-
-// threejs example
-
-
-// Gsap example
-
-
-// Projects pics zoom in zoom out with jquery
-
-
-// image zoom in
 
 
 footer_input.addEventListener("focus", () => {
