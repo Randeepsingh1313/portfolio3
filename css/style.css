@@ -105,7 +105,7 @@ img {
   overflow: visible;
   top: 9rem;
   left: 10rem;
-  z-index: 50;
+  z-index: 10;
 }
 
 .picoverlay2 {
