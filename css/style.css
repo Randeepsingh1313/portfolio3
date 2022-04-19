@@ -427,15 +427,16 @@ img {
   justify-content: space-between;
   padding: 1rem;
   margin-top: 6rem;
+  height: auto;
 }
 
 .content-about .about-exploration .exploration-grid a {
+  max-height: 25rem;
   width: 30%;
-  transition: transform 400ms;
-  border: 0.1rem solid #ffc700;
+  border: 0.1rem solid #FFFFFF;
   border-width: 0 0 0 .4rem;
   padding: 2rem;
-  border-color: transparent transparent transparent #ffc700;
+  border-color: transparent transparent transparent #FFFFFF;
 }
  .what-head {
   display: inline-block;
@@ -456,9 +457,9 @@ img {
   line-height: 1.5;
 }
 
-.content-about .about-exploration .exploration-grid a:hover {
+/* .content-about .about-exploration .exploration-grid a:hover {
   transform: translateX(-30px);
-}
+} */
 
 @media (min-width: 320px) and (max-width: 833px) {
   .container {
