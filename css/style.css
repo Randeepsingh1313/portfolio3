@@ -984,6 +984,7 @@ img {
 
 .about-sec {
   padding: 0 40px;
+  margin-top: 15rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
@@ -1151,6 +1152,10 @@ img {
     margin: 0rem;
     padding: 2rem;
     background: none;
+  }
+
+  .about .about-sec span.SphereText {
+    width: 10rem;
   }
 
   .about-sec .about-services .content-services .service-title {

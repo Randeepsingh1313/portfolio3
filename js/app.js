@@ -7,36 +7,29 @@ const links = document.querySelectorAll(".links a");
 // TagCloud js for 3d text sphere
 const Texts = [
   'HTML', 'CSS', 'JAVASCRIPT',
-  'SWIFT', 'MONGOOSE', 'REACT',
-  'PYTHON', 'SASS',
-  'DJANGO', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
+  'PHP', 'MYSQL', 'BOOTSTRAP',
+  'NODE JS', 'REACT JS',
+  'WEB API', 'ANDROID', 'MONGODB', 'MONGOOSE',
+  'EXPRESS', 'POSTMAN', 'SEO', 'GIT',
 ]
 
-var tagCloud = TagCloud('.Sphere', Texts, {
-
-  // Sphere radius in px
-  radius: 230,
-
-  // animation speed
-  // slow, normal, fast
+var tagCloud = TagCloud('.SphereText', Texts, 
+{
+  radius: 280,
   maxSpeed: 'normal',
   initSpeed: 'fast',
-
   // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
-  direction: 135,
-
-  // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+  direction: 195,
+  // Interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
   keep: true
-
 })
-
 var color = '#ffc700';
-document.querySelector('.Sphere').style.color = color
+document.querySelector('.SphereText').style.color = color
+document.querySelector('.SphereText').style.fontFamily = 'Montserrat, sans-serif'
+
 
 // Scroll to up Button
 var btn = $('#button');
-
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
