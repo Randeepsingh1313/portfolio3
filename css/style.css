@@ -1901,7 +1901,7 @@ h1.buttonD:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -50;
+  z-index: -40;
 }
 
 .stars .stars-back {
@@ -1914,5 +1914,5 @@ h1.buttonD:hover {
     radial-gradient(1px 1px at 120px 60px, #fff, rgba(0, 0, 0, 0)),
     radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
   background-repeat: repeat;
-  background-size: 400px 300px;
+  background-size: 300px 300px;
 }
